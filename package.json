@@ -17,9 +17,6 @@
       "url": "https://github.com/giovannicandotti/cordova-plugin-aes256.git"
     },
     "author": "Giovanni Candotti",
-    "license": "MIT",
-    "peerDependencies": {
-      "@angular/core": "^9.0.0"
-    }
+    "license": "MIT"
   }
   
