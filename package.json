@@ -1,0 +1,25 @@
+{
+    "name": "@giovannicandotti/cordova-plugin-aes256",
+    "version": "1.0.0",
+    "description": "Cordova Plugin for AES256 encryption/decryption with Ionic/Angular support",
+    "main": "ngx/index.js",
+    "types": "ngx/index.d.ts",
+    "keywords": [
+      "cordova",
+      "aes256",
+      "encryption",
+      "decryption",
+      "ionic",
+      "angular"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/giovannicandotti/cordova-plugin-aes256.git"
+    },
+    "author": "Giovanni Candotti",
+    "license": "MIT",
+    "peerDependencies": {
+      "@angular/core": "^9.0.0"
+    }
+  }
+  

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-aes256" version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>cordova-plugin-aes256</name>
+  <description>Cordova Plugin per AES256 che utilizza PBKDF2 per derivare chiave ed IV, garantendo interoperabilità tra iOS e Android</description>
+  <license>MIT</license>
+  <keywords>cordova, aes256, encryption, decryption, pbkdf2</keywords>
+  <engines>
+    <engine name="cordova" version=">=6.0.0" />
+  </engines>
+
+  <!-- File JavaScript di interfaccia -->
+  <js-module src="www/aes256.js" name="aes256">
+      <clobbers target="cordova.plugins.aes256" />
+  </js-module>
+
+  <!-- Implementazione per iOS in Swift -->
+  <platform name="ios">
+      <source-file src="src/ios/AES256.swift" />
+  </platform>
+
+  <!-- Implementazione per Android in Java -->
+  <platform name="android">
+      <source-file src="src/android/AES256.java" target-dir="src/eu/giovannicandotti/aes256" />
+  </platform>
+</plugin>
