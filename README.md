@@ -1,6 +1,6 @@
 ##############################################################
 ##############################################################
-##  cordova plugin aes256 encryption 
+##  cordova plugin aes256 encryption & decryption
 ##  with cross-platform compatibility
 ##  between Android and iOS
 ##############################################################
