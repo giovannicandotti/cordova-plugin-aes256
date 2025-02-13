@@ -8,7 +8,7 @@ Cordova install: ionic cordova plugin add cordova-plugin-aes256-encryption
 Node installation: npm i cordova-plugin-aes256-encryption
 ]
 
-La versione definitiva, modification's, è disponibile su:
+La versione definitiva, modificata e testata, è disponibile su:
 Https://github.com/giovannicandotti/cordova-plugin-aes256
 
 
@@ -26,7 +26,7 @@ Devono essere disponibili due funzioni, encrypt e decrypt, per codificare e deco
 I risultati prodotti dai due ambienti devono essere interscambiabili, ovvero codificati con un sistema e decodificabili con entrambi 
 Usa la pbkdf2 per derivare una chiave ed un iv sicuri. 
 
-All’inizio delle implementazioni evidenzia, ed inizializza con dei valori, le variabili rilevanti, ovvero:  - numero di iterazioni, salt, algoritmo e lunghezza della chiave per il PDFK2;
+All’inizio delle implementazioni evidenzia, ed inizializza con dei valori, le variabili rilevanti, ovvero: - numero di iterazioni, salt, algoritmo e lunghezza della chiave per il PDFK2;
  - Inoltre la lunghezza di secure_IV e secure_key per la specificità della codifica AES256
 Aggiungi dei commenti prolissi per definire con precisione le caratteristiche necessarie alla corretta inizializzazione delle variabili rilevanti di cui sopra.
 Verifica che le inizializzazioni siano le stesse per i due ambienti iOS ed android, in modo da garantire l’interoperabilità.
@@ -36,7 +36,7 @@ Poni attenzione al padding, ed evidenzia con dei commenti che la scelta fatta è
 Per l’implementazione iOS:
 -  usa il linguaggio swift.
 - Utilizza un approccio con strutture asincrone: ad esempio in una classe nominata AES256 potresti definire:
-”     private static let aes256Queue = DispatchQueue(label: "AESQUEUE", qos: DispatchQoS.background, attributes: .concurrent)
+”    private static let aes256Queue = DispatchQueue(label: "AESQUEUE", qos: DispatchQoS.background, attributes: .concurrent)
 ”
 E nelle funzioni potresti racchiudere tutte le operazioni all’interno di un 
 “
@@ -73,7 +73,7 @@ aes256.encrypt(…)
 “
 Oppure se necessario con
 “
-this.aes256.encrypt(…) “
+this.aes256.encrypt(…)“
 
 ######################################################################################
 ######################################################################################
